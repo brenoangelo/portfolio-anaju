@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --preto:#232323;
+    --branco:#F4F0EC;
+}
+
+html,body{
+    height: 100%;
+    background-color: var(--branco);
+}
+
+/*
+utilizado para titulos (font de jornal)
+font-family: 'Lora', serif;
+*/
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.font-journal{
+    font-family: 'Lora', serif;
+}
+
+
+
+header .container{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--preto);
+    padding: 5px 2px;
+}
+
+header .logo{
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: var(--preto);
+    padding: 5px;
+    font-size: 20px;
+}
+
+section.bg{
+    padding: 100px 0;
+}
+
+section.bg .container{
+    
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+section.bg > .container > h1, 
+section.bg > .container > h2{
+    font-size: 5rem;
+    color: var(--preto);
+}
+
+section.bg .foto{
+    width: 50%;
+    background-image: url('../img/foto-perfil.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 450px;
+    
+}
+
+section.about{
+    padding: 55px 0;
+}
+
+section.about .container{
+    flex-direction: column;
+}
+
+.section-title{
+    border-bottom: 2px solid var(--preto);
+    color: var(--preto);
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+section.about .about-text{
+    color: var(--preto);
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text p{
+    width: 100%;
+    max-width: 900px;
+}
+
+footer{
+    padding: 55px 0;
+}
+
+footer .container{
+    flex-direction: column;
+    
+}
+
+footer .contact-elements{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contact-elements a{
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.contact-elements .social-media a i{
+    padding: 5px;
+    font-size: 32px;
+}
